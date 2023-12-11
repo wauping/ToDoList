@@ -38,13 +38,16 @@ namespace ToDoList
 
         private void DeleteTask(ToDoTask task)
         {
-            if (task != null)
+            if (task.Check)
             {
-                Debug.WriteLine($"Deleting task: {task.Name}");
                 Tasks.Remove(task);
                 OnPropertyChanged(nameof(Tasks));
+                Debug.WriteLine($"Deleted task: {task.Name}");
             }
-            else { Debug.WriteLine($"bol((("); }
+            else
+            {
+                Debug.WriteLine($"Task {task.Name} cannot be deleted because it is not checked.");
+            }
         }
 
         public string Name

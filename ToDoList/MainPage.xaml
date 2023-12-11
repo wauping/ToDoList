@@ -27,7 +27,7 @@
             <Button Text="Добавить" Command="{Binding AddCommand}" WidthRequest="100" HorizontalOptions="End" BackgroundColor="#2ecc71" TextColor="White" Margin="10,0,0,0"/>
             <Button Text="Удалить" 
                     Command="{Binding DeleteCommand}" 
-                    CommandParameter="{Binding Source={x:Reference Name=tasksListView}, Path=SelectedItem}" 
+                    CommandParameter="{Binding Source={x:Reference tasksListView}, Path=SelectedItem}" 
                     BackgroundColor="#e74c3c" TextColor="White" Margin="10,0,0,0"/>
         </StackLayout>
     </StackLayout>
