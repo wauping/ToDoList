@@ -6,15 +6,15 @@
              mc:Ignorable="d"
              x:Class="ToDoList.MainPage">
 
-    <StackLayout BackgroundColor="#3498db" Padding="20">
+    
+    <StackLayout BackgroundColor="CornflowerBlue" Padding="20">
         <Label Text="ToDoList" FontSize="32" HorizontalOptions="CenterAndExpand" TextColor="White" Margin="0,20,0,20"/>
-
-        <ListView x:Name="tasksListView" ItemsSource="{Binding Tasks}" BackgroundColor="White" Margin="10">
+        <ListView x:Name="tasksListView" ItemsSource="{Binding Tasks}" SelectionMode="Single" BackgroundColor="LightBlue" Margin="10" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" Padding="10">
-                            <Label Text="{Binding Name}" VerticalOptions="Center" TextColor="#2c3e50"/>
+                        <StackLayout Orientation="Horizontal" Padding="10" Spacing="30">
+                            <Label Text="{Binding Name}" VerticalOptions="Center" TextColor="DarkBlue"/>
                             <Switch IsToggled="{Binding Check}" VerticalOptions="Center"/>
                         </StackLayout>
                     </ViewCell>
@@ -22,12 +22,15 @@
             </ListView.ItemTemplate>
         </ListView>
 
+
         <StackLayout Orientation="Horizontal" Margin="10">
-            <Entry Placeholder="Добавить новую задачу" Text="{Binding Name}" HorizontalOptions="FillAndExpand" BackgroundColor="White" />
-            <Button Text="Добавить" Command="{Binding AddCommand}" WidthRequest="100" HorizontalOptions="End" BackgroundColor="#2ecc71" TextColor="White" Margin="10,0,0,0"/>
+            <Entry Placeholder="Добавить новую задачу" Text="{Binding Name}" TextColor="Black" HorizontalOptions="FillAndExpand" BackgroundColor="White" />
+            <Button Text="Добавить" 
+                    Command="{Binding AddCommand}" 
+                    WidthRequest="100" HorizontalOptions="End" BackgroundColor="#2ecc71" TextColor="White" Margin="10,0,0,0"/>
             <Button Text="Удалить" 
                     Command="{Binding DeleteCommand}" 
-                    CommandParameter="{Binding Source={x:Reference tasksListView}, Path=SelectedItem}" 
+                    CommandParameter="{Binding Source={x:Reference tasksListView}, Path=SelectedItem}"
                     BackgroundColor="#e74c3c" TextColor="White" Margin="10,0,0,0"/>
         </StackLayout>
     </StackLayout>

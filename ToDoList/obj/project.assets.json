@@ -32930,24 +32930,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\waup9\\.nuget\\packages\\": {},
+    "C:\\Users\\nikit.LAPTOP-FSD8H3V0\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\UNIVERSITY\\PMU\\ToDoList\\ToDoList\\ToDoList.csproj",
+      "projectUniqueName": "C:\\Users\\nikit.LAPTOP-FSD8H3V0\\OneDrive\\Desktop\\University\\PMU\\ToDoList\\ToDoList\\ToDoList.csproj",
       "projectName": "ToDoList",
-      "projectPath": "E:\\UNIVERSITY\\PMU\\ToDoList\\ToDoList\\ToDoList.csproj",
-      "packagesPath": "C:\\Users\\waup9\\.nuget\\packages\\",
-      "outputPath": "E:\\UNIVERSITY\\PMU\\ToDoList\\ToDoList\\obj\\",
+      "projectPath": "C:\\Users\\nikit.LAPTOP-FSD8H3V0\\OneDrive\\Desktop\\University\\PMU\\ToDoList\\ToDoList\\ToDoList.csproj",
+      "packagesPath": "C:\\Users\\nikit.LAPTOP-FSD8H3V0\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nikit.LAPTOP-FSD8H3V0\\OneDrive\\Desktop\\University\\PMU\\ToDoList\\ToDoList\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\waup9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nikit.LAPTOP-FSD8H3V0\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
